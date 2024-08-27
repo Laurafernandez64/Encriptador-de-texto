@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+            <img class="logo_candado" src="./imagenes/candado.png" alt="Logo">
+    </header>
+    <main>
+        <section class="imput_texto">
+            <div class="area_texto">
+                <textarea class="campo_encriptar" rows="8" cols="40" placeholder= "Hola!  Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="advertencia">
+                <p class="advertencia"><img class="advertencia_signo" src="./imagenes/bi_exclamation-circle-fill.png">
+                     Solo letras minúsculas, sin acentos y sin caracteres especiales.</p>
+            </div>
+            <div class="botones">
+                <input type="button" class="boton_encriptar" value="Encriptar" onclick="botonEncriptar()"/>
+                <input type="button" class="boton_desencriptar" value="Desencriptar" onclick="botonDesencriptar()"/>
+            </div>
+        </section>
+        <section class="resultado">
+                <textarea class="texto_out" rows="5" cols="20" disabled></textarea>
+                <div class="resultado_ini">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <h3>Ingresa el texto que desees encriptar o desencriptar</h3>
+                    <button class="boton_copiar" onclick="copy()">Copiar</button> 
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer">Desarrollado por Laura Fernandez 2024</p>
+    </footer>
+    <script src="script.js"></script>
+   
+</body>
+</html>
